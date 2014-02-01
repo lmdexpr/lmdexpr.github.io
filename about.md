@@ -1,23 +1,34 @@
 ---
-title: About
+title: About Me
 ---
-# About Me
-  
 ## lmdexpr(oldname:sakuLambda)
-I'm student and developer.
+I'm student and developer in Japan.
   
-## interested
+## Interested
 -   Programming
 -   Reverse engineering
 -   Programming contest
 -   Lambda Calculation
+-   Pi Calculation
+-   Category theory
   
 ## Likes
-Type, Math, Programming, Lambda
+-   Type
+-   Math
+-   Programming
+-   Lambda
+-   Logic
   
 ## Weaks
-Type, Math, Social study, Sport
+-   Type
+-   Math
+-   Social study
+-   Sport
   
-## Study
-### Programming Languages
-Haskell, C++11, ruby, coq, agda, C#
+## Programming Languages(interested)
+-   Haskell
+-   C++11
+-   ruby
+-   coq
+-   agda
+-   C#

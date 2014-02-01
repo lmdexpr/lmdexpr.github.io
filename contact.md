@@ -2,9 +2,8 @@
 title: Contact
 ---
 
-##Cotact
-
 email   : lmdexpr@gmail.com  
-  
-twitter : @lmdexpr  
-  
+
+twitter : [@lmdexpr](https://twitter.com/lmdexpr)  
+
+github  : [lmdexpr](https://github.com/lmdexpr)  
