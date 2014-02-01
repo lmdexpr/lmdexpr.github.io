@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid   (mappend, mconcat)
-import           Data.Char     (toLower)
+--import           Data.Char     (toLower)
 import           Hakyll
 
 
@@ -22,12 +22,12 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
-    tags <- buildTags "posts/*.md" (fromCapture "tags/*.html" . map toLower)
+--    tags <- buildTags "posts/*.md" (fromCapture "tags/*.html" . map toLower)
     match "posts/*.md" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    (postCtx tags)
-            >>= loadAndApplyTemplate "templates/default.html" (postCtx tags)
+            >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
     create ["archive.html"] $ do
@@ -35,7 +35,7 @@ main = hakyllWith config $ do
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*.md"
             let archiveCtx =
-                    listField "posts" (postCtx tags) (return posts) `mappend`
+                    listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Archives"            `mappend`
                     defaultContext
 
@@ -50,7 +50,7 @@ main = hakyllWith config $ do
         compile $ do
             posts <- recentFirst =<< loadAll "post/*.md"
             let indexCtx =
-                    listField "posts" (postCtx tags) (return posts) `mappend`
+                    listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Home"                `mappend`
                     defaultContext
 
@@ -62,11 +62,11 @@ main = hakyllWith config $ do
     match "templates/*" $ compile templateCompiler
 
 --------------------------------------------------------------------------------
-postCtx :: Tags -> Context String
-postCtx ts = mconcat
+postCtx :: Context String
+postCtx = mconcat
     [ modificationTimeField "mtime" "%U"
     , dateField "date" "%B %e, %Y"
-    , tagsField "tags" ts
+--    , tagsField "tags" ts
     , defaultContext
     ]
 

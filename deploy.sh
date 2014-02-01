@@ -3,5 +3,5 @@
 
 cp ./def_index.html ./index.html
 ./site build
-cp _site/* .
+cp -r _site/* .
 ./site clean
