@@ -65,3 +65,8 @@ postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
+
+--------------------------------------------------------------------------------
+config :: Configuration
+config = defaultConfiguration{ deployCommand = deploy }
+    where deploy = "cp -r _site/* . && ./site clean"
