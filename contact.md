@@ -2,8 +2,8 @@
 title: Contact
 ---
 
-email   : lmdexpr@gmail.com  
+* email   : lmdexpr@gmail.com  
 
-twitter : [@lmdexpr](https://twitter.com/lmdexpr)  
+* github  : [lmdexpr](https://github.com/lmdexpr)  
 
-github  : [lmdexpr](https://github.com/lmdexpr)  
+* twitter : [lmdexpr](https://twitter.com/lmdexpr)  

@@ -5,30 +5,30 @@ title: About Me
 I'm student and developer in Japan.
   
 ## Interested
--   Programming
--   Reverse engineering
--   Programming contest
--   Lambda Calculation
--   Pi Calculation
--   Category theory
+* Programming
+* Reverse engineering
+* Programming contest
+* Lambda Calculation
+* Pi Calculation
+* Category theory
   
 ## Likes
--   Type
--   Math
--   Programming
--   Lambda
--   Logic
+* Type
+* Math
+* Programming
+* Lambda
+* Logic
   
 ## Weaks
--   Type
--   Math
--   Social study
--   Sport
+* Type
+* Math
+* Social study
+* Sport
   
 ## Programming Languages(interested)
--   Haskell
--   C++11
--   ruby
--   coq
--   agda
--   C#
+* Haskell
+* C++11
+* ruby
+* coq
+* agda
+* C#
