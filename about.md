@@ -25,10 +25,9 @@ I'm student and developer in Japan.
 * Social study
 * Sport
   
-## Programming Languages(interested)
+## Programming Languages
 * Haskell
 * C++11
 * ruby
 * coq
 * agda
-* C#
