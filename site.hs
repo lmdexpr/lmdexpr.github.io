@@ -1,7 +1,6 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid   (mappend, mconcat)
---import           Data.Char     (toLower)
 import           Hakyll
 
 
@@ -22,7 +21,6 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
---    tags <- buildTags "posts/*.md" (fromCapture "tags/*.html" . map toLower)
     match "posts/*.md" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
@@ -33,7 +31,7 @@ main = hakyllWith config $ do
     create ["archive.html"] $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*.md"
+            posts <- recentFirst =<< loadAll "posts/*"
             let archiveCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Archives"            `mappend`
@@ -48,7 +46,7 @@ main = hakyllWith config $ do
     match "index.html" $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "post/*.md"
+            posts <- recentFirst =<< loadAll "posts/*.md"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Home"                `mappend`
