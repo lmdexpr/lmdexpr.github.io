@@ -31,3 +31,4 @@ I'm student and developer in Japan.
 * ruby
 * coq
 * agda
+* Idris
