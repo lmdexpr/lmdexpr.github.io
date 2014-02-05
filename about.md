@@ -24,10 +24,15 @@ I'm student and developer in Japan.
 * Math
 * Social study
 * Sport
-  
+
 ## Programming Languages
+### Read and Write
 * Haskell
 * C++11
+### Write Only
+* perl
+### Beginner
+* asm
 * ruby
 * coq
 * agda
