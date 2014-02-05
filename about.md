@@ -1,7 +1,7 @@
 ---
 title: About Me
 ---
-## lmdexpr(oldname:sakuLambda)
+## lmdexpr(a.k.a yuki.t, girl A)
 I'm student and developer in Japan.
   
 ## Interested
