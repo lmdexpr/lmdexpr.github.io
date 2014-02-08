@@ -28,12 +28,13 @@ I'm student and developer in Japan.
 ## Programming Languages
 ### Read and Write
 * Haskell
-* C++11
+* C++11  
+
 ### Write Only
-* perl
+* perl  
+
 ### Beginner
 * asm
 * ruby
 * coq
 * agda
-* Idris
