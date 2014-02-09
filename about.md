@@ -25,7 +25,7 @@ I'm student and developer in Japan.
 * Social study
 * Sport
 
-## Programming Languages
+## Programming Languages(study now)
 ### Read and Write
 * Haskell
 * C++11  
