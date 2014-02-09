@@ -1,3 +1,3 @@
 lmdexpr.github.io
 =================
-https://lmdexpr.github.com was build by Hakyll
+https://lmdexpr.github.com was built by Hakyll
