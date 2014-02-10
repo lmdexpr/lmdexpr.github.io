@@ -30,7 +30,7 @@ main = hakyllWith config $ do
             >>= saveSnapshot "content"
             >>= return . fmap demoteHeaders
             >>= loadAndApplyTemplate "templates/post.html"    (postCtx tags)
-            >>= loadAndApplyTemplate "templates/default.html" (mappend mathCtx (postCtx tags))
+            >>= loadAndApplyTemplate "templates/github.html" (mappend mathCtx (postCtx tags))
             >>= relativizeUrls
 
     create ["archive.html"] $ do
