@@ -3,21 +3,26 @@ title: About Me
 ---
 ## lmdexpr(a.k.a yuki.t)
 I'm student and developer in Japan.
-  
-## Interested
-* Programming
-* Reverse engineering
-* Programming contest
-* Lambda Calculation
-* Pi Calculation
+
+## Living in
+Kumamoto, Japan
+
+## Born in
+Aug, 2, 1996
+
+## Interests and hobbies
+* Programming, Reverse engineering
+* Lambda, Pi Calculation
 * Category theory
-  
-## Loves
-* Type
 * Math
-* Programming
-* Lambda
 * Logic
+* Mathematical Logic
+* tea and cake(sweets)
+* anime, comic, game
+    * Atelier Totori, and more...
+  
+## Love
+* Totooria Helmold
   
 ## Weaks
 * Math
