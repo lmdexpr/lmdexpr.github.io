@@ -1,7 +1,7 @@
 ---
 title: About Me
 ---
-## lmdexpr(a.k.a yuki.t, girl A)
+## lmdexpr(a.k.a yuki.t)
 I'm student and developer in Japan.
   
 ## Interested
@@ -12,7 +12,7 @@ I'm student and developer in Japan.
 * Pi Calculation
 * Category theory
   
-## Likes
+## Loves
 * Type
 * Math
 * Programming
@@ -20,12 +20,11 @@ I'm student and developer in Japan.
 * Logic
   
 ## Weaks
-* Type
 * Math
 * Social study
 * Sport
 
-## Programming Languages(study now)
+## Programming Languages(learning)
 ### Read and Write
 * Haskell
 * C++11  
@@ -33,7 +32,7 @@ I'm student and developer in Japan.
 ### Write Only
 * perl  
 
-### Beginner
+### Interested
 * asm
 * ruby
 * coq
