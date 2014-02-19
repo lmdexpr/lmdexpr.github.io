@@ -14,9 +14,6 @@ Aug, 2, 1996
 * Programming, Reverse engineering
 * Lambda, Pi Calculation
 * Category theory
-* Math
-* Logic
-* Mathematical Logic
 * tea and cake(sweets)
 * anime, comic, game
     * Atelier Totori, and more...
@@ -25,19 +22,12 @@ Aug, 2, 1996
 * Totooria Helmold
   
 ## Weaks
-* Math
 * Social study
 * Sport
+* communication
 
-## Programming Languages(learning)
-### Read and Write
+## Programming Languages
 * Haskell
-* C++11  
-
-### Write Only
-* perl  
-
-### Interested
 * asm
 * ruby
 * coq
