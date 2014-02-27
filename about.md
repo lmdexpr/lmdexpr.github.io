@@ -1,7 +1,7 @@
 ---
 title: About Me
 ---
-## lmdexpr(a.k.a yuki.t)
+## lmdexpr(a.k.a yuki.t, el, ili)
 I'm student and developer in Japan.
 
 ## Living in
@@ -26,8 +26,9 @@ Aug, 2, 1996
 * Sport
 * communication
 
-## Programming Languages
+## Programming Languages(learning)
 * Haskell
+* c++
 * asm
 * ruby
 * coq
