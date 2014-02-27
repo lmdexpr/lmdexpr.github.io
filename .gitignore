@@ -1,3 +1,5 @@
 *.hi
 *.o
 posts/*.md
+cabal-dev
+dist
