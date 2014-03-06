@@ -1,5 +1,10 @@
-*.hi
-*.o
-posts/*.md
-cabal-dev
 dist
+cabal-dev
+*.o
+*.hi
+*.chi
+*.chs.h
+.virthualenv
+.cabal-sandbox
+cabal.sandbox.config
+_cache
