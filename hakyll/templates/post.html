@@ -1,9 +1,12 @@
-<div class="info">
-    Posted on $date$
-    $tags$
-    $if(author)$
-        by $author$
-    $endif$
-</div>
-
-$body$
+<article class="uk-article">
+    <h1 class="uk-article-title">
+        $title$
+    </h1>
+    <p class="uk-article-meta">
+        Posted on $date$
+        $tags$
+    </p>
+    <p class="uk-article-lead">
+        $body$
+    </p>
+</article>
