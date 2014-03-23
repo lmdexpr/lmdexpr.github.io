@@ -2,7 +2,8 @@
 title: Product
 ---
 ## This Page
-made by Hakyll, UIkit.  
+uses Hakyll, UIkit.  
+(c) 2014 lmdexpr.
 
 ## Others
 comming soon...

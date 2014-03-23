@@ -1,8 +1,8 @@
 ---
 title: About Me
 ---
-## lmdexpr(a.k.a yuki.t, el, ili)
-I'm student and developer in Japan.
+## lmdexpr(a.k.a yuki.t, el)
+I'm student and developer.
 
 ## Living in
 Kumamoto, Japan
@@ -14,8 +14,8 @@ Aug, 2, 1996
 * Programming, Reverse engineering
 * Lambda, Pi Calculation
 * Category theory
-* tea and cake(sweets)
-* anime, comic, game
+* Tea and cake(sweets)
+* Anime, Comic, Game
     * Atelier Totori, and more...
   
 ## Love
@@ -28,8 +28,6 @@ Aug, 2, 1996
 
 ## Programming Languages(learning)
 * Haskell
-* c++
-* asm
-* ruby
 * coq
-* agda
+* clojure
+* asm
