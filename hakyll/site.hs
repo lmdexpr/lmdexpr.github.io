@@ -2,6 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 import qualified Data.Map       as M
 import           Data.Monoid    (mappend, mconcat)
+import           Data.Char
 import           Text.Pandoc
 import           Hakyll
 
@@ -24,29 +25,36 @@ main = hakyllWith config $ do
 
     tags <- buildTags "posts/*.md" (fromCapture "tags/*.html")
 
-    match "posts/*.md" $ do
-        route $ setExtension "html"
-        compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
-            >>= saveSnapshot "content"
-            >>= return . fmap demoteHeaders
-            >>= loadAndApplyTemplate "templates/post.html"    (postCtx tags)
-            >>= loadAndApplyTemplate "templates/default.html" (mappend mathCtx (postCtx tags))
-            >>= relativizeUrls
+    mapM_ (\(target, ctx, title, lists) -> do
+                match (fromRegex $ target ++ "/*.md") $ do
+                    route $ setExtension "html"
+                    compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
+                        >>= saveSnapshot "content"
+                        >>= return . fmap demoteHeaders
+                        >>= loadAndApplyTemplate 
+                                (fromFilePath $ "templates/" ++ (target ++ "s") ++ ".html") ctx
+                        >>= loadAndApplyTemplate "templates/default.html" (mappend mathCtx ctx)
+                        >>= relativizeUrls
+                
+                create [fromFilePath $ title ++ ".html"] $ do
+                    route idRoute
+                    compile $ do
+                        let listCtx =
+                                field (target ++ "s")
+                                    (\_ -> lists (fromRegex $ target ++ "/*.md") recentFirst)
+                                `mappend` constField "title" (headUpper title)
+                                `mappend` defaultContext
+                        makeItem ""
+                            >>= loadAndApplyTemplate 
+                                    (fromFilePath $ "templates/" ++ title ++ ".html") listCtx
+                            >>= loadAndApplyTemplate 
+                                    "templates/default.html" (mappend mathCtx listCtx)
+                            >>= relativizeUrls
+          ) [ ("post" , postCtx tags, "archive", postList tags)
+            , ("sweet", sweetCtx    , "cafe"   , sweetList)
+            ]
 
-    create ["archive.html"] $ do
-        route idRoute
-        compile $ do
-            let archiveCtx =
-                    field "posts" (\_ -> postList tags "posts/*.md" recentFirst) `mappend`
-                    constField "title" "Archives"                                `mappend`
-                    defaultContext
-
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                >>= loadAndApplyTemplate "templates/default.html" (mappend mathCtx archiveCtx)
-                >>= relativizeUrls
-
-    --Copied by https://github.com/tanakh/tanakh.jp/blob/master/site.hs
+    --Copied from https://github.com/tanakh/tanakh.jp/blob/master/site.hs
     tagsRules tags $ \tag pattern -> do
         let title = "Posts tagged " ++ tag
 
@@ -100,6 +108,22 @@ mathCtx = field "mathjax" $ \item -> do
                     else ""
 
 --------------------------------------------------------------------------------
+sweetCtx :: Context String
+sweetCtx = mconcat
+    [ modificationTimeField "mtime" "%U"
+    , dateField "date" "%B %e, %Y"
+    , urlField "image"
+    , defaultContext
+    ]
+
+--------------------------------------------------------------------------------
+sweetList :: Pattern -> ([Item String] -> Compiler [Item String]) -> Compiler String
+sweetList pattern sortFilter = do
+    sweets  <- sortFilter =<< loadAll pattern
+    itemTpl <- loadBody "templates/sweet-list.html"
+    applyTemplateList itemTpl sweetCtx sweets
+            
+--------------------------------------------------------------------------------
 pandocOptions :: WriterOptions
 pandocOptions = defaultHakyllWriterOptions
     {
@@ -111,3 +135,7 @@ config :: Configuration
 config = defaultConfiguration{ deployCommand = deploy }
     where
         deploy = "cp -r _site/* .. && ./lmdexpr.github.io clean"
+
+--------------------------------------------------------------------------------
+headUpper :: String -> String
+headUpper (c:cs) = toUpper c : cs
