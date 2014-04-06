@@ -1,5 +1,5 @@
 ---
 title: Cookie
 published: 2014-01-12
-url: ../images/sweet/cookie_and_tea.jpg
+image: ../images/sweet/cookie.jpg
 ---
