@@ -29,5 +29,5 @@ Aug, 2, 1996
 ## Programming Languages(learning)
 * Haskell
 * coq
-* clojure
+* c
 * asm
