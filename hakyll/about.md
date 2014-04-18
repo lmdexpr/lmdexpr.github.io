@@ -2,7 +2,7 @@
 title: About Me
 ---
 ## lmdexpr(a.k.a yuki.t, el)
-I'm student and developer.
+I'm a student.
 
 ## Living in
 Kumamoto, Japan
@@ -11,8 +11,8 @@ Kumamoto, Japan
 Aug, 2, 1996
 
 ## Interests and hobbies
-* Programming, Reverse engineering
-* Lambda, Pi Calculation
+* Programming
+* Lower layer
 * Category theory
 * Tea and cake(sweets)
 * Anime, Comic, Game
@@ -24,7 +24,7 @@ Aug, 2, 1996
 ## Weaks
 * Social study
 * Sport
-* communication
+* Communication
 
 ## Programming Languages(learning)
 * Haskell
