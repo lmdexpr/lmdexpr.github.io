@@ -14,7 +14,7 @@ Aug, 2, 1996
 * Programming
 * Lower layer
 * Category theory
-* Tea and cake(sweets)
+* Making sweets
 * Anime, Comic, Game
     * Atelier Totori, and more...
   
