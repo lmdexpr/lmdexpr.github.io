@@ -1,1 +1,1 @@
-.cabal-sandbox/bin/lmdexpr.github.io
+./dist/build/lmdexpr.github.io/lmdexpr.github.io

@@ -59,8 +59,8 @@ main = hakyllWith config $ do
                >>= loadAndApplyTemplate "templates/default.html" defaultContext
                >>= relativizeUrls
 
-    match "index.html" $ do
-        route idRoute
+    match "index.hakyll" $ do
+        route $ setExtension "html"
         compile $ do
             let indexCtx = field "posts" $ \_ ->
                            postList tags "posts/*.md" $ fmap (take 5) . recentFirst
