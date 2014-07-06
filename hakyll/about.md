@@ -13,7 +13,8 @@ Aug, 2, 1996
 ## Interests and hobbies
 * Programming
 * Lower layer
-* Category theory
+* AI
+* Mathematical logic
 * Making sweets
 * Anime, Comic, Game
     * Atelier Totori, and more...
@@ -21,11 +22,6 @@ Aug, 2, 1996
 ## Love
 * Totooria Helmold
   
-## Weaks
-* Social study
-* Sport
-* Communication
-
 ## Programming Languages(learning)
 * Haskell
 * coq
