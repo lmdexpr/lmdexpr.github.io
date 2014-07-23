@@ -13,17 +13,20 @@ Aug, 2, 1996
 ## Interests and hobbies
 * Programming
 * Lower layer
-* AI
 * Mathematical logic
+* AI
 * Making sweets
 * Anime, Comic, Game
-    * Atelier Totori, and more...
+    * Atelier Totori
+    * Yuyu-shiki
+    * and more...
   
 ## Love
 * Totooria Helmold
   
 ## Programming Languages(learning)
 * Haskell
+* scheme
 * coq
 * c
 * asm
