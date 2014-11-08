@@ -2,7 +2,7 @@ lmdexpr.github.io
 =================
 # About
 Hi,all.  
-I'm lmdexpr.
+I'm lmdexpr.  
 This repository has my page and its generator.
 
 # branch
@@ -11,6 +11,3 @@ has HTML, CSS, JS and more files.
 
 ## Hakyll
 Runnning Hakyll that is static site generator.
-
-## GH-Pages
-nothing now.
