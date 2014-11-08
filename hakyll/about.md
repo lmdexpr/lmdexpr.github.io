@@ -2,7 +2,6 @@
 title: About Me
 ---
 ## lmdexpr(a.k.a yuki.t, el)
-I'm a student.
 
 ## Living in
 Kumamoto, Japan
@@ -31,3 +30,4 @@ Aug, 2, 1996
 * coq
 * c
 * asm
+* other functional languages...
