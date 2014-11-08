@@ -1,7 +1,10 @@
 ---
 title: About Me
 ---
-## lmdexpr(a.k.a yuki.t, el)
+## lmdexpr(a.k.a yuki)
+
+## School
+National Institute of Technology, Kumamoto College, Kuamamoto Campus
 
 ## Living in
 Kumamoto, Japan
@@ -11,6 +14,7 @@ Aug, 2, 1996
 
 ## Interests and hobbies
 * Programming
+* Programming Contest
 * Lower layer
 * Mathematical logic
 * AI
@@ -26,8 +30,10 @@ Aug, 2, 1996
   
 ## Programming Languages(learning)
 * Haskell
+* Fsharp
+* OCaml
 * scheme
 * coq
 * c
 * asm
-* other functional languages...
+* ruby
