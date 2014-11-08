@@ -2,16 +2,14 @@
 title: Contact
 ---
 
-* email   : [lmdexpr@gmail.com](mailto:lmdexpr@gmail.com)
+* gmail   : <a href="mailto:lmdexpr@gmail.com"><i class="uk-icon-google"></i></a>
 
-* google+ : [Yuki.T](http://gplus.to/lmdexpr)
+* google+ : <a href="http://gplus.to/lmdexpr"><i class="uk-icon-google-plus"></i></a>
 
-* github  : [lmdexpr](https://github.com/lmdexpr)  
+* github  : <a href="https://github.com/lmdexpr"><i class="uk-icon-github"></i></a>
 
-* twitter : [lmdexpr](https://twitter.com/lmdexpr)  
+* twitter : <a href="https://twitter.com/lmdexpr"><i class="uk-icon-twitter"></i></a>
 
-* Ask.fm  : [sk_lmd](http://ask.fm/sk_lmd)
+* skype(for friends) : <a href="skype:sakuraprpr"><i class="ui-icon-skype"></i></a>
 
-* tumblr  : [lmdexpr](https://lmdexpr.tumblr.com)
-
-* skype   : [sakuraprpr](skype:sakuraprpr), [lmdexpr](skype:lmdexpr)
+* skype(for others)  : <a href="skype:lmdexpr"><i class="ui-icon-skype"></i></a>
