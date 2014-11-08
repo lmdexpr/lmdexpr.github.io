@@ -18,7 +18,8 @@ Aug, 2, 1996
 * Making sweets
 * Anime, Comic, Game
     * Atelier Totori
-    * Yuyu-shiki
+    * YUYUSHIKI
+    * MAWARU-PENGUINDRUM
     * and more...
   
 ## Love
