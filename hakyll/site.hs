@@ -1,4 +1,3 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 import qualified Data.Map as M
 import Data.Monoid ((<>), mconcat)
