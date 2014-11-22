@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>たんぱつ and セキュリティさくら11th</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/uikit.min.css" rel="stylesheet" media="screen">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="../js/uikit.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/1.9.1/jquery.min.js">
+        </script>
+        <script src="../js/gist-embed.js"></script>
+    </head>
+    <body>
+      <div class="uk-clearfix">
+        <br>
+        <div class="uk-float-left">
+            <a href="#offcanvas" class="uk-icon-bars uk-icon-medium" data-uk-offcanvas></a>
+        </div>
+        <div class="uk-float-right uk-text-large">Atelier lambda</div>
+      </div>
+
+      <hr>
+
+      <div id="offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+            <li class="uk-nav-header">Menu</li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../product.html">Product</a></li>
+            <li><a href="../cafe.html">Cafe</a></li>
+            <li><a href="../archive.html">Archive</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="uk-grid uk-grid-driver" data-uk-grid-match>
+        <div class="uk-width-1-10"> </div>
+        <div class="uk-width-7-10">
+          <div id="content">
+            <h1>たんぱつ and セキュリティさくら11th</h1>
+
+            <article class="uk-article">
+    <p class="uk-article-meta">
+        Posted on November 22, 2014
+        <a href="../tags/security.html">security</a>, <a href="../tags/study-group.html">study-group</a>
+        <br>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-related="lmdexpr">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </p>
+</article>
+
+<h1 id="たんぱつ">たんぱつ</h1>
+<p>ていれいやの話！</p>
+<h2 id="低れいやぁのすゝめ">低れいやぁのすゝめ</h2>
+<ul>
+<li>by きくちゃん先生</li>
+<li>レイヤの考え方は人次第</li>
+<li>人それぞれ低レイヤに向かう人、高レイヤに向かう人等々
+<ul>
+<li>LISPしよう</li>
+<li>LISPならレイヤを飛ばして色々できる</li>
+</ul></li>
+<li>低レイヤを変えると、高レイヤも変わる
+<ul>
+<li>なんとなーく圏で説明できそうと思ったり</li>
+</ul></li>
+<li>低レイヤを知ると夢が広がる
+<ul>
+<li>Arduino</li>
+<li>Pololu A-Star 32u4 Micro(Switch Scienece)</li>
+</ul></li>
+</ul>
+<h2 id="設計部spiceの裏ワザ">設計部<sub>SPICEの裏ワザ</sub></h2>
+<ul>
+<li>by かすてらさん</li>
+<li>回路設計のシュミレーションしよう！</li>
+<li>Simulation Program with Integrated Circuit Emphasis(SPICE)
+<ul>
+<li>アナログ回路シュミレータ</li>
+</ul></li>
+<li>演算増幅器設計コンテスト</li>
+</ul>
+<h2 id="お昼">お昼</h2>
+<p>おいしいカレー</p>
+<hr />
+<h1 id="セキュリティさくら11th">セキュリティさくら11th</h1>
+<p>あえさんが死んだ日</p>
+<h2 id="インターネットバンキングについて">インターネット・バンキングについて</h2>
+<ul>
+<li>by 相戸浩志氏</li>
+<li>インターネット・バンキングを狙う犯罪急増
+<ul>
+<li>Game Over Zeus(銀行預金を狙うウィルス)</li>
+</ul></li>
+</ul>
+<h3 id="光と闇について">光と闇について</h3>
+<ul>
+<li>スクリーンキーボード
+<ul>
+<li>キーロガー対策</li>
+<li>めんどう</li>
+</ul></li>
+<li>S/MIME mail
+<ul>
+<li>安価で安全</li>
+<li>認知度が低い</li>
+</ul></li>
+<li>パスワード・リマインダ
+<ul>
+<li>秘密の質問</li>
+<li>SNSのプロフィールで突破されやすい</li>
+</ul></li>
+<li>ワンタイムパスワード(乱数)
+<ul>
+<li>乱数表の毎回異なる2箇所が指定、盗聴されても再利用不可</li>
+<li>盗聴に成功したパターンまでリロードしたり、そもそも短い</li>
+</ul></li>
+<li>ワンタイムパスワード(メール)
+<ul>
+<li>上より安全</li>
+<li>盗聴し、有効時間内だと再利用できてしまう</li>
+</ul></li>
+<li>セキュア・ブラウザ
+<ul>
+<li>通信内容を盗まれないブラウザ</li>
+<li>偽物があったり、本物だと証明も困難</li>
+<li>今後、切り札になるかも？</li>
+</ul></li>
+<li>暗唱番号
+<ul>
+<li>生年月日などはダメと注意喚起、楽</li>
+<li>客側の問題</li>
+</ul></li>
+<li>テレフォン・バンキング
+<ul>
+<li>残高照会のみ、事前登録した先にしか振り込めない、人間が振り込みに対応</li>
+<li>不正引き出しそのものではなく認証が何回でもできるケースだと悪用できる</li>
+</ul></li>
+<li>One Time Token
+<ul>
+<li>一定時間でパスワードが変わり、モノを使った2要素認証</li>
+<li>全ての顧客に配るには膨大な費用がかかる上に数年で電池切れ</li>
+</ul></li>
+<li>リスクベース認証
+<ul>
+<li>リスクの大きさに合わせて、複数認証(リスクの大きさ:IPアドレス、ブラウザ、アクセス時間、頻度)</li>
+<li>振り込みしたい場合のスコアが高く、認証回数が7回以上にも……</li>
+</ul></li>
+<li>携帯電話を使った2要素認証
+<ul>
+<li>Webサイトに表示された乱数を携帯から入力、携帯のIDもチェック</li>
+<li>ガラケーからスマホに移行できなかった……</li>
+</ul></li>
+</ul>
+<h3 id="費用や事務作業の問題">費用や事務作業の問題</h3>
+<ul>
+<li>郵送じゃ高すぎる！</li>
+<li>結局、メールを使ったコストダウンへ……</li>
+</ul>
+<h3 id="営業戦略の問題">営業戦略の問題</h3>
+<ul>
+<li>右肩上がり神話</li>
+</ul>
+<h3 id="sier---銀行">SIer &lt;-&gt; 銀行</h3>
+<ul>
+<li>銀行がのぼせ上がる</li>
+<li>スクリーンキーボードは見た目で分かりやすいので導入
+<ul>
+<li>自分で使わないので不便かどうか分からない</li>
+</ul></li>
+</ul>
+<h3 id="旧来の対策の強化">旧来の対策の強化</h3>
+<ul>
+<li>ウィルス対策ソフトを配る
+<ul>
+<li>実績未知数……</li>
+</ul></li>
+</ul>
+<h3 id="新たな対策">新たな対策</h3>
+<ul>
+<li>ハードトークンのワンタイムパスワード(テンキー付き)</li>
+<li>スマートフォンアプリで確認</li>
+<li>そもそも対策を気にしない人が引っかかりやすいので、希望者だけでは意味がない</li>
+</ul>
+<h3 id="まとめ">まとめ</h3>
+<ul>
+<li>サービスとのトレードオフ</li>
+<li>抜け駆けさせずに、銀行それぞれで足並みを揃える</li>
+<li>使わないダイレクト口座は作らせない</li>
+<li>ダイレクト口座からの送金限度額を低くする</li>
+<li>盗まれたお金はおそらく組織犯罪に使われている</li>
+<li>ちゃんと意識して対策しないとまずいのでは？</li>
+</ul>
+<hr />
+<h2 id="sweets-time">sweets time</h2>
+<p>yeh<br />ラフランスのタルト最高<br />yo</p>
+<h2 id="lt">LT</h2>
+<h3 id="仕事をクビになるかもしれない10の行為">仕事をクビになるかもしれない10の行為</h3>
+<ul>
+<li>by 前田典彦</li>
+<li><a href="http://blog.kaspersky.co.jp/10-mistakes-cost-career/">参考</a></li>
+<li>チェック10個
+<ul>
+<li>1 x</li>
+<li>2 o</li>
+<li>3 o</li>
+<li>4 o</li>
+<li>5 x</li>
+<li>6 x</li>
+<li>7 x</li>
+<li>8 o</li>
+<li>9 o</li>
+<li>10 x</li>
+</ul></li>
+<li>自分、学生なので適当に</li>
+</ul>
+<h3 id="欲望とセキュリティ">欲望とセキュリティ</h3>
+<ul>
+<li>by m_seven</li>
+<li>トラブルの種類
+<ul>
+<li>無料</li>
+<li>激安</li>
+<li>アダルトサイト</li>
+</ul></li>
+<li>偽セキュリティソフト</li>
+<li>セックストーション
+<ul>
+<li>わいせつ画像で壊れるサーバーはないです</li>
+</ul></li>
+<li>遠隔操作</li>
+<li>商品が届かない激安通販サイト</li>
+</ul>
+<h3 id="医療と情報セキュリティ">医療と情報セキュリティ</h3>
+<ul>
+<li>by aeoe39950426</li>
+<li>電柱事件</li>
+<li>紛失及び盗難による流出
+<ul>
+<li>デスクトップも盗まれた</li>
+</ul></li>
+<li>メールによる流出</li>
+<li>インターネット上への流出
+<ul>
+<li>不正アクセス</li>
+<li>ウイルス感染</li>
+<li>ファイル共有ソフト</li>
+</ul></li>
+<li>情報の不適切な廃棄及び再利用</li>
+<li>最大のセキュリティホールは人間</li>
+<li>対策は厚労省がまとめたガイドラインを公表している</li>
+<li>医療における情報利用は利用者のため！</li>
+</ul>
+<h3 id="セキュアコーディング入門">セキュアコーディング入門</h3>
+<ul>
+<li>by me</li>
+<li>こわかった</li>
+<li>時間もなかった</li>
+<li>本当は実装の話がしたかった</li>
+<li><a href="http://github.com/lmdexpr/exCeption">github</a></li>
+</ul>
+<h2 id="hitcon参加レポート">HITCON参加レポート</h2>
+<ul>
+<li>by 相戸浩志氏</li>
+<li>手厚い歓迎</li>
+<li>面白そうなカンファレンス</li>
+<li>行ってみたい……</li>
+</ul>
+<h2 id="懇親会">懇親会</h2>
+<ul>
+<li>はつ こんしんかい！！</li>
+<li>色んな人と話せた(と思う)
+<ul>
+<li>もう少しアクティブに動くべきだったかも</li>
+</ul></li>
+<li>とても楽しかったのでまた行きたい</li>
+</ul>
+<h2 id="感想">感想</h2>
+<ul>
+<li>いつも以上に楽しかった</li>
+<li>いつも通り面白すごい話とか</li>
+<li>twitter上だけでの知り合いとかと会えたこととか</li>
+<li>初めての大勢の前でのLTとか</li>
+<li>初めての懇親会とか</li>
+<li>お疲れ様でした</li>
+<li>なお、火曜日から後期中間テストの模様(白目)</li>
+</ul>
+
+
+          </div>
+
+          <hr class="uk-grid-driver">
+
+          <div id="footer">
+            <div class="uk-container uk-container-center">
+              Site proudly generated by
+              <a href="http://jaspervdj.be/hakyll">Hakyll</a>.<br>
+              This site uses
+              <a href="http://getuikit.com/index.html">UIkit</a>, 
+              <a href="https://github.com/blairvanderhoof/gist-embed">gist-embed</a>.<br>
+              This site's repository is
+              <a href="https://github.com/lmdexpr/lmdexpr.github.io/">
+                <i class="uk-icon-github"></i>github
+              </a>.
+              (c) 2014 lmdexpr.<br>
+            </div>
+          </div>
+          <div class="uk-width-2-10"> </div>
+        </div>
+      </div>
+    </body>
+</html>
