@@ -138,4 +138,4 @@ pandocOptions = defaultHakyllWriterOptions
 config :: Configuration
 config = defaultConfiguration{ deployCommand = deploy }
     where
-        deploy = "cp -r _site/* .."
+        deploy = "rm -rf ../*.html ../posts ../tags ../sweets ../images; cp -r _site/* .."

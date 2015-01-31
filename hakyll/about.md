@@ -33,7 +33,7 @@ Aug, 2, 1996
 * Fsharp
 * OCaml
 * scheme
-* coq
-* c
+* Coq
+* C lang
 * asm
 * ruby
