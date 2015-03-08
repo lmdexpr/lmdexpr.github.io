@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>セキュリティさくら12th</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/uikit.min.css" rel="stylesheet" media="screen">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="../js/uikit.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/1.9.1/jquery.min.js">
+        </script>
+        <script src="../js/gist-embed.js"></script>
+    </head>
+    <body>
+      <div class="uk-clearfix">
+        <br>
+        <div class="uk-float-left">
+          &nbsp; <a href="#offcanvas" class="uk-icon-bars uk-icon-medium" data-uk-offcanvas></a>
+        </div>
+        <div class="uk-float-right uk-text-large">Atelier lambda</div>
+      </div>
+
+      <hr>
+
+      <div id="offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+            <li class="uk-nav-header">Menu</li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../product.html">Product</a></li>
+            <li><a href="../cafe.html">Cafe</a></li>
+            <li><a href="../archive.html">Archive</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="uk-grid uk-grid-driver" data-uk-grid-match>
+        <div class="uk-width-1-10"> </div>
+        <div class="uk-width-7-10">
+          <div id="content">
+            <h1>セキュリティさくら12th</h1>
+
+            <article class="uk-article">
+    <p class="uk-article-meta">
+        Posted on March  7, 2015
+        <a href="../tags/security.html">security</a>, <a href="../tags/study-group.html">study-group</a>
+        <br>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-related="lmdexpr">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </p>
+</article>
+
+<h1 id="セキュリティさくら12th">セキュリティさくら12th</h1>
+<h2 id="スマートフォン向けゲームのチート">スマートフォン向けゲームのチート</h2>
+<ul>
+<li>by 中村智史氏</li>
+</ul>
+<h3 id="チートとは">チートとは？</h3>
+<ul>
+<li>定義は曖昧</li>
+<li>例えば意図しない動作によってゲームをクリアする</li>
+<li>そのモチベーション</li>
+<li>優越感、自己顕示(1)</li>
+<li>技術的好奇心(2)</li>
+<li>経済活動(3)</li>
+<li>セーフなのは？</li>
+<li>全部ダメ</li>
+<li>運営側から確認なんてできない</li>
+<li>強いて言えば3が最もまずい</li>
+</ul>
+<h3 id="チートの商品化">チートの商品化</h3>
+<ul>
+<li>チートの商品化は民事、刑事沙汰になる</li>
+<li>広告</li>
+<li>商品化</li>
+<li>RMT</li>
+<li><a href="http://chinesegoldfarmers.com/index.html">Gold Farmers</a></li>
+<li>Ge Jin - Youtube</li>
+<li>消費者がいる</li>
+<li>セキュリティ的なリスクが！</li>
+</ul>
+<h3 id="チートとセキュリティ">チートとセキュリティ</h3>
+<ul>
+<li>アドウェアやマルウェア</li>
+<li>偽ツールによってインストールされたり</li>
+<li>詐欺</li>
+<li>アカウントハック</li>
+<li>偽チートツール</li>
+<li>反社会的勢力</li>
+<li>実体のない商材なので表で動きにくい人達が使いやすい</li>
+</ul>
+<h3 id="技術の話">技術の話</h3>
+<ul>
+<li>デバッガとかで色々したり</li>
+<li>dllハックしたり</li>
+<li>サーバーへの通信の間にコンピュータを置いて、通信内容を改竄したり</li>
+<li>apkファイルを解析するとすぐに分かってしまう</li>
+<li>デバッグの技術でもって解析する</li>
+</ul>
+<h3 id="守るためには">守るためには</h3>
+<ul>
+<li>端末と通信経路はユーザの制御下</li>
+<li>サーバへの侵入はとりあえず考えない</li>
+<li>重要な処理はサーバ上で行う</li>
+<li>課金処理</li>
+<li>課金アイテム処理</li>
+<li>領収情報と比較、異常検知</li>
+<li>ログ監視と異常検知</li>
+<li>事後でも処置可能</li>
+<li>クライアント側でどうするか？</li>
+<li>難読化</li>
+<li>メモリ上の値をランダム配置</li>
+<li>共通鍵暗号を頻繁に更新</li>
+<li>XIGNCODE等のチート対策ツール</li>
+<li>サーバ側では</li>
+<li>送受信する値を改竄検知</li>
+<li>仕様から判断できる上限値と下限値を管理</li>
+</ul>
+<hr />
+<h2 id="sweets-time">sweets time</h2>
+<h2 id="lt">LT</h2>
+<h3 id="mikutterの薄い本制作時の薄いセキュリティインシデント">mikutterの薄い本制作時の薄いセキュリティインシデント</h3>
+<ul>
+<li>by <span class="citation">@EiM</span>_GTPE_ 氏</li>
+<li>頒布前の薄い本データの入ったUSBを忘れてしまう</li>
+<li>製本後、現行データを削除していなかった</li>
+<li>制作に関するマニュアルがない</li>
+<li>USBに暗号化付きのものにする？</li>
+<li>謝罪会見</li>
+</ul>
+<h3 id="s.v.流おうちセキュリティ最前線">S.V.流おうちセキュリティ最前線</h3>
+<ul>
+<li>by <span class="citation">@uzuki</span>_aoba 氏</li>
+<li>BLE</li>
+<li>おうちの鍵がワンタイム</li>
+<li>クラウド型カメラ</li>
+<li>海外では流行った</li>
+<li>治安が悪い</li>
+<li>DIY主義</li>
+<li>skypeを使って通信</li>
+<li>ナイトカメラ</li>
+<li>発熱が半端ない</li>
+</ul>
+<h3 id="おうちネットワークのセキュリティ">おうちネットワークのセキュリティ</h3>
+<ul>
+<li>by <span class="citation">@y1r96</span> 氏</li>
+<li>おうちネットワークを作る話</li>
+<li>NICは高い</li>
+<li>VLAN使うと安くできる</li>
+<li>VyOS</li>
+</ul>
+<h3 id="こわくないctf超入門">こわくないCTF超入門</h3>
+<ul>
+<li>by <span class="citation">@kikuchan98</span> 氏</li>
+<li>範囲の広いCTFの入門</li>
+<li>QR</li>
+<li>暗号</li>
+<li>CTFはICTを活用した知恵の輪</li>
+</ul>
+<h2 id="懇親会">懇親会</h2>
+<ul>
+<li>にかいめ！</li>
+<li>前回の反省は生かせず、結局、コミュ力が……</li>
+<li>美味しかったです</li>
+</ul>
+<h2 id="感想">感想</h2>
+<ul>
+<li>またLTしたいなあ</li>
+<li>とりあえず今日は明日が納期のお仕事しなきゃ……</li>
+</ul>
+
+
+          </div>
+
+          <hr class="uk-grid-driver">
+
+          <div id="footer">
+            <div class="uk-container uk-container-center">
+              Site proudly generated by
+              <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
+              This site uses
+              <a href="http://getuikit.com/index.html">UIkit</a>, 
+              <a href="https://github.com/blairvanderhoof/gist-embed">gist-embed</a>.<br>
+              This site's repository is
+              <a href="https://github.com/lmdexpr/lmdexpr.github.io/">
+                <i class="uk-icon-github"></i>github
+              </a>.
+              (c) 2014 lmdexpr.<br>
+            </div>
+          </div>
+          <div class="uk-width-2-10"> </div>
+        </div>
+      </div>
+    </body>
+</html>
