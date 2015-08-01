@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>セキュリティさくら13th</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/uikit.min.css" rel="stylesheet" media="screen">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="../js/uikit.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/1.9.1/jquery.min.js">
+        </script>
+        <script src="../js/gist-embed.js"></script>
+    </head>
+    <body>
+      <div class="uk-clearfix">
+        <br>
+        <div class="uk-float-left">
+          &nbsp; <a href="#offcanvas" class="uk-icon-bars uk-icon-medium" data-uk-offcanvas></a>
+        </div>
+        <div class="uk-float-right uk-text-large">Atelier lambda</div>
+      </div>
+
+      <hr>
+
+      <div id="offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+            <li class="uk-nav-header">Menu</li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../product.html">Product</a></li>
+            <li><a href="../cafe.html">Cafe</a></li>
+            <li><a href="../archive.html">Archive</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="uk-grid uk-grid-driver" data-uk-grid-match>
+        <div class="uk-width-1-10"> </div>
+        <div class="uk-width-7-10">
+          <div id="content">
+            <h1>セキュリティさくら13th</h1>
+
+            <article class="uk-article">
+    <p class="uk-article-meta">
+        Posted on August  1, 2015
+        <a href="../tags/security.html">security</a>, <a href="../tags/study-group.html">study-group</a>
+        <br>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-related="lmdexpr">ツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </p>
+</article>
+
+<h1 id="セキュリティさくら13th">セキュリティさくら13th</h1>
+<h2 id="iotデバイスとしてのクルマに対するセキュリティ">IoTデバイスとしてのクルマに対するセキュリティ</h2>
+<ul>
+<li>by 溝口誠一郎 氏</li>
+</ul>
+<h3 id="jeep">Jeep</h3>
+<ul>
+<li>遠隔でハック可能</li>
+<li>ナビの画面、ラジオ、エンジン、 …</li>
+</ul>
+<h3 id="iotと私達">IoTと私達</h3>
+<ul>
+<li>一意に識別可能な「もの」がインターネット/クラウドに接続され、情報交換することにより相互に制御する仕組み</li>
+<li>標準化団体の乱立</li>
+<li>スパムを吐く家電</li>
+</ul>
+<h3 id="繋がるクルマ">繋がるクルマ</h3>
+<ul>
+<li>クルマにはコンピュータが詰まってる</li>
+<li>車載ネットワークで繋がっている</li>
+<li>Jeepはこの一部(CAN, Controller Area Network)が狙われた</li>
+<li>攻撃し易さのリストがある</li>
+<li>繋がり方へのバリエーション</li>
+<li>物理的ハック</li>
+<li>パーツ取り替え</li>
+<li>マイコンを付けたり</li>
+<li>偽物が紛れ込むタイミング</li>
+<li>工場での組み立て時</li>
+<li>パーツの取り替え</li>
+<li>遠隔での攻撃</li>
+</ul>
+<h3 id="distributed-toilet-flush">Distributed Toilet Flush</h3>
+<ul>
+<li>一斉に水を流す</li>
+<li>熊本内なら250万円ほど</li>
+<li>約119回Flushすると枯渇</li>
+</ul>
+<h3 id="kddi研究所での取り組み">KDDI研究所での取り組み</h3>
+<ul>
+<li>組み込み系との連携</li>
+<li>セキュアブート</li>
+<li>ブートローダがOSのハッシュを計算</li>
+<li>OSが改竄されてないことを確認してブート</li>
+<li>携帯用のものを車載用へ</li>
+<li>クルマ搭載の通信モジュールでマイコンのファームウェアを更新</li>
+<li>SIM = Javaカード</li>
+<li>SIMのアプリ実行領域から鍵を配信してしまったり</li>
+<li>適宜認証する必要あり</li>
+<li>どのように運用していくかも大事</li>
+</ul>
+<h3 id="最後に">最後に</h3>
+<ul>
+<li>デバイスが暴走しないように</li>
+<li>プライバシーも実はスケスケ、とかにならないように</li>
+<li>IoTを支えるインフラまでやる</li>
+</ul>
+<hr />
+<h2 id="sweets-time">sweets time</h2>
+<h2 id="lt">LT</h2>
+<h3 id="コピペマンを殺す方法">コピペマンを殺す方法</h3>
+<ul>
+<li>by <span class="citation">@lmdexpr</span></li>
+<li>LT2回目</li>
+</ul>
+<h3 id="セキュリティと裁判例について">セキュリティと裁判例について</h3>
+<ul>
+<li>by 吉村将氏</li>
+<li>どこまでが完成か？</li>
+<li>提案書の記載方法</li>
+<li>追加作業費用の請求</li>
+<li>ベンダ側の中止提言義務</li>
+<li>契約関係からの離脱</li>
+<li>商人の報酬請求</li>
+</ul>
+<h3 id="にほんヒトのじんこう">にほんヒトのじんこう</h3>
+<ul>
+<li>by <span class="citation">@bamboo</span>_inside氏</li>
+<li>ヒトは減る</li>
+<li>人口分布は時代で極端に変化する</li>
+<li>都会と地方の人口差</li>
+<li>熊本に都市化計画?</li>
+</ul>
+<h3 id="blue-termite-apt">Blue Termite APT</h3>
+<ul>
+<li>by 前田典彦氏</li>
+<li>日本を狙った攻撃</li>
+<li>自称専門家を見分ける眼</li>
+<li>piyolog</li>
+<li>提言5つ(メモ間に合わず……)</li>
+<li>やられたところを批難しない</li>
+</ul>
+<h3 id="セキュリティさくらを支える技術">セキュリティさくらを支える技術</h3>
+<ul>
+<li>by greenz_greenz 氏</li>
+<li>そろそろ次世代へ、とのこと……</li>
+<li>コンセプト</li>
+<li>「何をしたいか」</li>
+<li>資金</li>
+<li>計画立案</li>
+<li>備品管理</li>
+<li>告知</li>
+<li>Twitter</li>
+<li>口コミ</li>
+<li>人数等調整</li>
+<li>引き継ぎ、マニュアルの大事さ</li>
+<li>ふりかえり</li>
+<li>他人との関係</li>
+</ul>
+<h2 id="懇親会">懇親会</h2>
+<ul>
+<li>3回目(?)</li>
+<li>LTの題材のおかげか今までで一番多くの人に話をして頂いた</li>
+<li>楽しかった</li>
+</ul>
+<h2 id="感想">感想</h2>
+<ul>
+<li>やはりLTはするべき</li>
+<li>しないと学生の僕らじゃ話すこと少なかったりする</li>
+<li>またしたいけれども少ない枠でどれだけ出来るか</li>
+<li>昔やってたKSGみたいなのがちゃんと運用できればいいんだろうけど……</li>
+</ul>
+
+
+          </div>
+
+          <hr class="uk-grid-driver">
+
+          <div id="footer">
+            <div class="uk-container uk-container-center">
+              Site proudly generated by
+              <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
+              This site uses
+              <a href="http://getuikit.com/index.html">UIkit</a>, 
+              <a href="https://github.com/blairvanderhoof/gist-embed">gist-embed</a>.<br>
+              This site's repository is
+              <a href="https://github.com/lmdexpr/lmdexpr.github.io/">
+                <i class="uk-icon-github"></i>github
+              </a>.
+              (c) 2014 lmdexpr.<br>
+            </div>
+          </div>
+          <div class="uk-width-2-10"> </div>
+        </div>
+      </div>
+    </body>
+</html>
