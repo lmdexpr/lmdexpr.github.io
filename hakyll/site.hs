@@ -5,7 +5,6 @@ import Data.Monoid ((<>), mconcat)
 import Text.Pandoc
 import Hakyll
 
---------------------------------------------------------------------------------
 main :: IO ()
 main = hakyllWith config $ do
     match ("images/**" .||. "js/**" .||. "fonts/**") $ do
@@ -89,7 +88,6 @@ main = hakyllWith config $ do
 
     match "templates/*" $ compile templateCompiler
 
---------------------------------------------------------------------------------
 postCtx :: Tags -> Context String
 postCtx ts = mconcat
     [ modificationTimeField "mtime" "%U"
@@ -98,14 +96,12 @@ postCtx ts = mconcat
     , defaultContext
     ]
 
---------------------------------------------------------------------------------
 postList :: Tags -> Pattern -> ([Item String] -> Compiler [Item String]) -> Compiler String
 postList tags pattern sortFilter = do
     posts   <- sortFilter =<< loadAll pattern
     itemTpl <- loadBody "templates/post-list.html"
     applyTemplateList itemTpl (postCtx tags) posts
             
---------------------------------------------------------------------------------
 mathCtx :: Context a
 mathCtx = field "mathjax" $ \item -> do
         metadata <- getMetadata $ itemIdentifier item
@@ -113,28 +109,24 @@ mathCtx = field "mathjax" $ \item -> do
                     then "<script type=\"text/javascript\" src=\"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\"></script>"
                     else ""
 
---------------------------------------------------------------------------------
 sweetCtx :: Context String
 sweetCtx = mconcat
     [ dateField "date" "%B %e, %Y"
     , defaultContext
     ]
     
---------------------------------------------------------------------------------
 sweetList :: Pattern -> ([Item String] -> Compiler [Item String]) -> Compiler String
 sweetList pattern sortFilter = do
     sweets  <- sortFilter =<< loadAll pattern
     itemTpl <- loadBody "templates/sweet-list.html"
     applyTemplateList itemTpl sweetCtx sweets
             
---------------------------------------------------------------------------------
 pandocOptions :: WriterOptions
 pandocOptions = defaultHakyllWriterOptions
     {
         writerHTMLMathMethod = MathJax ""
     }
 
---------------------------------------------------------------------------------
 config :: Configuration
 config = defaultConfiguration{ deployCommand = deploy }
     where
