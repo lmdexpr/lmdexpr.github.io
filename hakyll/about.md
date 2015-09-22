@@ -2,9 +2,10 @@
 title: About Me
 ---
 ## lmdexpr(a.k.a yuki)
+(mean lambda-expression)
 
 ## School
-National Institute of Technology, Kumamoto College, Kuamamoto Campus
+National Institute of Technology, Kumamoto College, Kumamoto Campus
 
 ## Living in
 Kumamoto, Japan
@@ -13,12 +14,11 @@ Kumamoto, Japan
 Aug, 2, 1996
 
 ## Interests and hobbies
+* Math, Logic, Philosophy
 * Programming
-* Programming Contest
-* Lower layer
-* Mathematical logic
-* AI
+* Artificial Intelligence
 * Making sweets
+* SF Novel
 * Anime, Comic, Game
     * Atelier Totori
     * YUYUSHIKI
@@ -30,10 +30,11 @@ Aug, 2, 1996
   
 ## Programming Languages(learning)
 * Haskell
-* Fsharp
+* Scala
+* Elixir
+* Coq
+* F#
 * OCaml
 * scheme
-* Coq
 * C lang
 * asm
-* ruby
