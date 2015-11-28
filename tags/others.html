@@ -7,9 +7,9 @@
         <link href="../css/uikit.min.css" rel="stylesheet" media="screen">
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="../js/uikit.min.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/1.9.1/jquery.min.js">
-        </script>
         <script src="../js/gist-embed.js"></script>
+        <script src="http://listjs.com/no-cdn/list.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/1.9.1/jquery.min.js"></script>
     </head>
     <body>
       <div class="uk-clearfix">
@@ -17,7 +17,7 @@
         <div class="uk-float-left">
           &nbsp; <a href="#offcanvas" class="uk-icon-bars uk-icon-medium" data-uk-offcanvas></a>
         </div>
-        <div class="uk-float-right uk-text-large">Atelier lambda</div>
+        <div class="uk-float-right uk-text-large" style="margin-right: 20px">Atelier λ</div>
       </div>
 
       <hr>
@@ -44,19 +44,24 @@
 
             <h2>Here you can find all my previous posts:</h2>
 
-<ul>
+<div id="posts">
+  <input class="search" placeholder="Filter" style="border:solid 1px #ccc;border-radius: 5px;padding:7px 14px;margin-bottom:10px" />
+  <ul class="list">
     <li>
-    <a href="../posts/2014-02-06-alive.html">生存報告</a> - February  6, 2014<br>
-    (tags:<a href="../tags/others.html">others</a>)<br>
-    <br>
-</li>
-<li>
-    <a href="../posts/2014-02-02-test.html">投稿テスト</a> - February  2, 2014<br>
-    (tags:<a href="../tags/others.html">others</a>)<br>
-    <br>
+  <a href="../posts/2014-02-02-test.html"><span class="title">投稿テスト</span></a> - <span class="date">February  2, 2014</span><br>
+  <i class="uk-icon-tag"></i> <span class="tags"><a href="../tags/others.html">others</a></span><br>
+  <br>
 </li>
 
-</ul>
+  </ul>
+</div>
+
+<script>
+var postList = new List('posts', {
+    valueNames: [ 'title', 'date', 'tags' ]
+});
+</script>
+
 
           </div>
 
@@ -68,7 +73,8 @@
               <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
               This site uses
               <a href="http://getuikit.com/index.html">UIkit</a>, 
-              <a href="https://github.com/blairvanderhoof/gist-embed">gist-embed</a>.<br>
+              <a href="https://github.com/blairvanderhoof/gist-embed">gist-embed</a>,
+              <a href="http://listjs.com/">list.js</a>.<br>
               This site's repository is
               <a href="https://github.com/lmdexpr/lmdexpr.github.io/">
                 <i class="uk-icon-github"></i>github
