@@ -1,5 +1,15 @@
 <h2>Here you can find all my previous posts:</h2>
 
-<ul>
+<div id="posts">
+  <input class="search" placeholder="Filter" style="border:solid 1px #ccc;border-radius: 5px;padding:7px 14px;margin-bottom:10px"/>
+  <ul class="list">
     $posts$
-</ul>
+  </ul>
+</div>
+
+<script>
+var postList = new List('posts', {
+    valueNames: [ 'title', 'date', 'tags' ]
+});
+</script>
+

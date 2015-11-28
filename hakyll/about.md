@@ -2,7 +2,6 @@
 title: About Me
 ---
 ## lmdexpr(a.k.a yuki)
-(mean lambda-expression)
 
 ## School
 National Institute of Technology, Kumamoto College, Kumamoto Campus
@@ -17,24 +16,21 @@ Aug, 2, 1996
 * Math, Logic, Philosophy
 * Programming
 * Artificial Intelligence
-* Making sweets
+* Tea and sweets
 * SF Novel
 * Anime, Comic, Game
-    * Atelier Totori
     * YUYUSHIKI
+    * Atelier Totori
     * MAWARU-PENGUINDRUM
     * and more...
   
 ## Love
-* Totooria Helmold
-  
-## Programming Languages(learning)
+* 櫟井唯 (ゆゆ式)
+
+## Likes
 * Haskell
 * Scala
-* Elixir
-* Coq
-* F#
 * OCaml
+* F#
 * scheme
-* C lang
-* asm
+* Coq
