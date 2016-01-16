@@ -2,7 +2,7 @@
 title: Contact
 ---
 
-* <a href="mailto:lmdexpr@gmail.com"><i class="uk-icon-envelope"></i> gmail</a>
+* <i class="uk-icon-envelope"></i> lmdexpr@gmail.com
 
 * <a href="http://gplus.to/lmdexpr"><i class="uk-icon-google-plus"></i> google+</a>
 
