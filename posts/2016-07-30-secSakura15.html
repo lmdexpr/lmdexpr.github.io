@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>セキュリティさくら15th</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/uikit.min.css" rel="stylesheet" media="screen">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/gist-embed.js"></script>
+        <script src="http://listjs.com/no-cdn/list.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+      <div class="uk-clearfix">
+        <br>
+        <div class="uk-float-left">
+          &nbsp; <a href="#offcanvas" class="uk-icon-bars uk-icon-medium" data-uk-offcanvas></a>
+        </div>
+        <div class="uk-float-right uk-text-large" style="margin-right: 20px">Atelier λ</div>
+      </div>
+
+      <hr>
+
+      <div id="offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+            <li class="uk-nav-header">Menu</li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../product.html">Product</a></li>
+            <li><a href="../cafe.html">Cafe</a></li>
+            <li><a href="../archive.html">Archive</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="uk-grid uk-grid-driver" data-uk-grid-match>
+        <div class="uk-width-1-10"> </div>
+        <div class="uk-width-7-10">
+          <div id="content">
+            <h1>セキュリティさくら15th</h1>
+
+            <article class="uk-article">
+    <p class="uk-article-meta">
+      Posted on July 30, 2016<br>
+      <i class="uk-icon-tag"></i> <a href="../tags/security.html">security</a>, <a href="../tags/study-group.html">study-group</a><br>
+      <a href="https://twitter.com/share" class="twitter-share-button" {count} data-via="lmdexpr" data-dnt="true">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </p>
+</article>
+
+<h2 id="クラウド不安とか言ってる場合じゃない最近のクラウドセキュリティ前編">クラウド不安、とか言ってる場合じゃない最近のクラウドセキュリティ(前編)</h2>
+<ul>
+<li>by 松本 照吾 氏</li>
+</ul>
+<h3 id="評価のわかれるクラウドセキュリティ">評価のわかれるクラウドセキュリティ</h3>
+<ul>
+<li><a href="http://www.publickey1.jp/blog/15/iaasamazon210google.html">プレゼンで使われた図</a></li>
+<li>クラウドを使わない理由上位に「セキュリティに不安がある」(情報通信白書)</li>
+<li>一方でクラウドを使う理由上位に「セキュリティが高くなる」(同上)</li>
+<li>海外は特に顕著</li>
+</ul>
+<h3 id="そもそもクラウドってどんなもの">そもそもクラウドってどんなもの？</h3>
+<ul>
+<li>キャパシティ計画</li>
+<li>従来は過剰投資やキャパシティ不足が発生(需要に対して見合わない投資)</li>
+<li>クラウドにすることで需要と同じだけ使えるようにする</li>
+<li>クラウドならすぐに拡張/削除が容易</li>
+<li>所有(従来) &lt;-&gt; 利用(クラウド)</li>
+<li>最初から完成系を作らず、フィードバックさせて臨機応変にしていく考え方になっている</li>
+<li>インスタグラムもそんな感じ</li>
+</ul>
+<h3 id="クラウドセキュリティの不安をのぞくために">クラウドセキュリティの不安をのぞくために</h3>
+<ul>
+<li>サービスに対する第三者評価</li>
+<li>ISOとかの話</li>
+<li>お客様の声、事例</li>
+<li>サービス自体が新しくなっていく</li>
+</ul>
+<h3 id="クラウドセキュリティの常識が変わる">クラウドセキュリティの常識が変わる</h3>
+<ul>
+<li>従来の常識は以下の維持</li>
+<li>機密性</li>
+<li>可用性</li>
+<li>完全性</li>
+<li>クラウドは</li>
+<li>ビッグデータ、分析のための情報が容易に入手可能に</li>
+<li>全ての社内リソースが可視化される</li>
+<li>セキュリティはITに織り込まれているから、その投資だけ取り出すことは不可能</li>
+<li>ROI -&gt; 変化適応</li>
+<li>脅威 x 脆弱性 x 情報資産 (従来の方程式)</li>
+<li>クラウドが「適応型セキュリティ」を加速させる</li>
+<li>臨機応変に対応していく</li>
+<li>変化適応が少ないほどサービス側(提供側)に、高いほど自分達でやっていくようなセキュリティ</li>
+<li>クラウドだからこその変化に応じたセキュリティ</li>
+</ul>
+<h2 id="sweets-time">sweets time</h2>
+<h2 id="クラウド不安とか言ってる場合じゃない最近のクラウドセキュリティ後編">クラウド不安、とか言ってる場合じゃない最近のクラウドセキュリティ(後編)</h2>
+<h3 id="クラウドならではのセキュリティへ">クラウドならでは、のセキュリティへ</h3>
+<ul>
+<li>Netflixの場合</li>
+<li>可用性が命のサービス</li>
+<li>でも止まらないサービスなんてない</li>
+<li>じゃあ、止まってもいいサービスにしよう！</li>
+<li>本番環境に勝手にシャットダウンするようなスクリプトを配置(故障のシミュレーション?)</li>
+<li>それでも動く仕組みを開発した</li>
+<li>例えば常時SSLという課題</li>
+<li>AWSでは色々なサービスを提供</li>
+<li>ユーザーは本来やるべき業務のみに集中</li>
+<li>「本来やるべきこと」に集中するためのセキュリティ</li>
+</ul>
+<h3 id="一歩進んだセキュリティのために">一歩進んだセキュリティのために</h3>
+<ul>
+<li>Security by Design</li>
+<li>結果としてセキュリティ要件を見たす環境構築を自動化して守る</li>
+<li>DevSecOps</li>
+<li>セキュリティにDevOpsを生かしていく</li>
+<li>表記揺れあり DevOps, DevOps + Securtiy など</li>
+<li>AWSではこれも、そういう仕組みが用意されている</li>
+<li>今のクラウドの出来ること</li>
+<li>環境をテンプレートに出来る</li>
+<li>実行を自動化できる</li>
+<li>実行の証跡を確保できる</li>
+<li>PCI DSS</li>
+<li>AWSにはクイックスタートがある</li>
+</ul>
+<h3 id="おわりに">おわりに</h3>
+<ul>
+<li>出来なかったことが出来るようになりつつある</li>
+<li>変化や要求に応じる</li>
+<li>本当にやるべきことに集中できる環境をつくる</li>
+</ul>
+<hr />
+<h2 id="lt">LT</h2>
+<h3 id="sgr2016のご案内">SGR2016のご案内</h3>
+<ul>
+<li>by 前田 氏</li>
+<li>SGR2016というカンファレンスの告知</li>
+<li>2016/09/23開催</li>
+</ul>
+<h3 id="ビギクラ-開発入門者向け脆弱性学習アプリ">ビギクラ！ 開発入門者向け脆弱性学習アプリ</h3>
+<ul>
+<li>by 政倉 氏</li>
+<li>入門者がWebに対して「簡単に」攻撃できるアプリ</li>
+<li>学習支援<br />
+</li>
+<li>SQL injectionできるフォームに対して内部のSQLが見えたりする</li>
+</ul>
+<h3 id="パスワード管理ソフトの有用性と危険性について比較してみた">パスワード管理ソフトの有用性と危険性について比較してみた</h3>
+<ul>
+<li>by <span class="citation">@CyberForce3373</span> 氏</li>
+<li>有用性</li>
+<li>マスターパスワードで一括管理</li>
+<li>本当にランダムなパスワードで登録できる</li>
+<li>自動入力や同期機能</li>
+<li>危険性</li>
+<li>全てを一度で奪われる</li>
+<li>ハッキング、マスターパスワードを忘れる</li>
+<li>盗まれるのはマスターパスワードであって、盗まれても暗号化されたパスワード</li>
+<li>これが正しく機能していれば、危険性は少ない(?)</li>
+<li>下手な管理よりは圧倒的に安全</li>
+<li>使い方を工夫する</li>
+<li>最強なのは複雑で強力な複数パスワードを自分の頭で覚える</li>
+</ul>
+<h3 id="teslacryptを焼き肉に変えた話">TeslaCryptを焼き肉に変えた話</h3>
+<ul>
+<li>by 李 充根 氏</li>
+<li>Teslacryptにひっかかったのを直す話</li>
+<li>通称vvvウイルス</li>
+<li>ファイルの拡張子をvvvに変えて暗号化</li>
+<li>身代金を払って復号……</li>
+<li>TeslaCrackというツールがこのウイルスの脆弱性をついて復号してくれる</li>
+<li>しかし、今回は拡張子がmp3に</li>
+<li>脆弱性が潰された進化版！</li>
+<li>解決方法はない&gt;&lt;</li>
+<li>突然TeslaCryptの作者が降参し、復号キーを公開 ???</li>
+<li>あっさり解決 -&gt; そして焼き肉へ</li>
+<li>原因は不明。生徒が何かしたかも？</li>
+<li>遠因はネットワーク構成がおかしい</li>
+<li>セキュリティソフトが更新されてなかった</li>
+</ul>
+<h3 id="csirtって知ってますか">CSIRTって知ってますか?</h3>
+<ul>
+<li>by 橘 氏</li>
+<li>セキュリティ対策などについて監視したり対応する組織</li>
+<li>日本シーサート協議会</li>
+<li>CSIRTの横の繋がり</li>
+<li>加盟数がどんどん増えている</li>
+<li>ネットワーク等を監視してヒューマンエラーとかも検知</li>
+</ul>
+<h3 id="運営してるサイトの紹介">運営してるサイトの紹介</h3>
+<ul>
+<li>by 竹森 氏</li>
+<li>まさかのエディタでプレゼン</li>
+<li>タイピングチューブ</li>
+<li>youtubeの動画に合わせて歌詞をタイピングするゲーム</li>
+</ul>
+<h2 id="懇親会">懇親会</h2>
+<ul>
+<li>誕生日がまだなのでアルコールはまだでした(キレ気味)</li>
+<li>でも誕生日プレゼントもらったので嬉しかったです(小並感)</li>
+</ul>
+<h2 id="感想">感想</h2>
+<ul>
+<li>懇親会はいつも以上にお話できたと思います</li>
+<li>受験も頑張って、次回か次々回にはまたLTしたいなあ</li>
+<li>あと、受験終わったらこのサイト一新します</li>
+</ul>
+
+
+          </div>
+
+          <hr class="uk-grid-driver">
+
+          <div id="footer">
+            <div class="uk-container uk-container-center">
+              Site proudly generated by
+              <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
+              This site uses
+              <a href="http://getuikit.com/index.html">UIkit</a>, 
+              <a href="https://github.com/blairvanderhoof/gist-embed">gist-embed</a>,
+              <a href="http://listjs.com/">list.js</a>.<br>
+              This site's repository is
+              <a href="https://github.com/lmdexpr/lmdexpr.github.io/">
+                <i class="uk-icon-github"></i>github
+              </a>.
+              (c) 2014 lmdexpr.<br>
+            </div>
+          </div>
+          <div class="uk-width-2-10"> </div>
+        </div>
+      </div>
+    </body>
+</html>
